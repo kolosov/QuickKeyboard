@@ -13,18 +13,19 @@ Button {
 	GridLayout.col: col
 	GridLayout.colSpan: 2
 	GridLayout.rowSpan: 2
-	width: 50
-	height: 50
+    width: 30
+    height: 30
 
-	BorderImage {
+    BorderImage {
 		anchors.fill: parent
 		source: mouseDown || active ? "qrc:/gfx/quickkeyboard/btn_pressed.png" : "qrc:/gfx/quickkeyboard/btn.png"
 		border { left: 2; top: 2; right: 2; bottom: 2 }
-	}
+    }
 
 	Text {
 		text: label
-		color: "white"
+        //color: "white"
+        color: "black"
 		anchors {
 			verticalCenter: parent.verticalCenter
 			left: parent.left
@@ -33,8 +34,8 @@ Button {
 			rightMargin: 5
 		}
 		font.pixelSize: parent.height / 2
-		font.weight: Font.Bold
-		style: Text.Raised; styleColor: "#000000"
+        //font.weight: Font.Bold
+        //style: Text.Raised; styleColor: "#000000"
 		maximumLineCount: 1
 		fontSizeMode: Text.Fit
 		horizontalAlignment: Text.AlignHCenter
