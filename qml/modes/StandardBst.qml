@@ -78,7 +78,8 @@ Mode {
     Btn { col: 18; row: 0; label: "0"; symbols: ["0"] }
     Btn { col: 20; row: 0; label: "-"; symbols: ["-"] }
     Btn { col: 22; row: 0; label: "="; symbols: ["="] }
-    Btn { col: 24; row: 0; GridLayout.colSpan: 4; label: "delete"; hasPreview: false; symbols: ["\x7f"] }
+    Btn { col: 24; row: 0; label: "@"; symbols: ["@"] }
+    Btn { col: 26; row: 0; GridLayout.colSpan: 2; label: "delete"; hasPreview: false; symbols: ["\x7f"] }
 
     Btn { col: 0; row: 2; label: "Tab"; symbols: ["\t"] }
     Btn { col: 2; row: 2; label: "Q"; symbols: btn_q }
